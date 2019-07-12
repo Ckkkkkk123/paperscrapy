@@ -4,10 +4,8 @@ from fetchman.spider.spider_core import SpiderCore
 from fetchman.processor.base_processor import BaseProcessor
 from fetchman.downloader.http.spider_request import Request
 from fetchman.utils.decorator import check
-# from fetchman.pipeline.console_pipeline import ConsolePipeline
-# from fetchman.pipeline.pic_pipeline import PicPipeline
+from pipelines.console_pipeline import ConsolePipeline
 from fetchman.pipeline.pipe_item import pipeItem
-# from fetchman.downloader.selenium_downloader import SeleniumDownLoader
 from bs4 import BeautifulSoup
 import hashlib
 import time
@@ -23,15 +21,18 @@ class Zhu_Processor(BaseProcessor):
     allowed_domains = ['doi.org','dblp.uni-trier.de']
     start_requests = [Request(url='https://dblp.uni-trier.de/db/journals?pos=01', priority=0)]
 
-    @check
-    def process(self,response):
-        page = 1
-        while page <= 4567:
-            yield Request(url='https://dblp.uni-trier.de/db/journals?pos=%d' % page,callback=self.process_entry, priority=0,duplicate_remove=False)
-            page +=1
+    @classmethod
+    def init_start_requests(cls):
+        cls.start_requests.extend([Request(url='https://dblp.uni-trier.de/db/journals?pos=%d' % page,callback=self.process_entry, priority=0,duplicate_remove=False) for page in range(1,4500)])
+    # @check
+    # def process(self,response):
+    #     page = 1
+    #     while page <= 4567:
+    #         yield Request(url='https://dblp.uni-trier.de/db/journals?pos=%d' % page,callback=self.process_entry, priority=0,duplicate_remove=False)
+    #         page +=1
     
     @check
-    def process_entry(self,response):
+    def process(self,response):
         soup = BeautifulSoup(response.m_response.content,'html.parser')
         link = soup.find(name='div',class_='hide-body').find_all('a')
         for ref in link:
@@ -76,4 +77,6 @@ class Zhu_Processor(BaseProcessor):
             result['url'] = paperurl
             yield pipeItem(['console'],result)
 if __name__ == '__main__':
-    SpiderCore(Zhu_Processor()).start()
+    SpiderCore(Zhu_Processor()) \
+        .set_pipeline(ConsolePipeline(), 'console') \
+        .start()
