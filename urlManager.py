@@ -4,14 +4,10 @@ class UrlManager(object):
     def __init__(self):
         self.new_urls = set()
         self.old_urls = set()
-        self.newlist = set()
-        self.oldlist = set()
     def add_new_url(self, url):
         if url[0] is None:
             return
-        if url[0] not in self.newlist and url[0] not in self.oldlist:
-            self.new_urls.add(url)
-            self.newlist.add(url[0])
+        self.new_urls.add(url)
     # 批量添加url
     def add_new_urls(self, urls):
         if urls is None or len(urls) == 0:
@@ -26,12 +22,5 @@ class UrlManager(object):
     # 获得url和解析器队列中最早一个
     def get_new_url(self):
         new_url = self.new_urls.pop()
-        newl = self.newlist.pop()
         self.old_urls.add(new_url)
-<<<<<<< HEAD
-        self.oldlist.add(newl)
         return new_url
-=======
-        self.old_code.add(new_code)
-        return new_url, new_code
->>>>>>> 3188c855781be6eab8bf923697ac451906fb376f

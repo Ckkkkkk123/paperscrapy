@@ -6,13 +6,15 @@ class HtmlParser(object):
     # 解析器编号0
     # 抓取杂志名称及其链接地址
     def parseEntry(self, content):
-        soup = BeautifulSoup(content,'html.parser')
-        link = soup.find(name='div',class_='hide-body').find_all('a')
-        urls = set()
-        for ref in link:
-            data = (ref.get('href'),1)
-            urls.add(data)
-        return urls
+        if content:
+            soup = BeautifulSoup(content,'html.parser')
+            link = soup.find(name='div',class_='hide-body').find_all('a')
+            urls = set()
+            for ref in link:
+                data = (ref.get('href'),1)
+                urls.add(data)
+            return urls
+        return []
     # 解析器编号1
     # 抓取期刊列表
     def parseStran(self, content):
@@ -34,12 +36,15 @@ class HtmlParser(object):
         soup = BeautifulSoup(content, 'html.parser')
         trasplist = soup.find_all('li', class_="entry article")
         for item in trasplist:
-            paperurl = item.find('div', class_='head').a.get('href')
+            atag = item.find('div',class_='head').find('a')
+            if atag is None:
+                return 0,0,0
+            paperurl = atag.get('href')
             articleinfo = item.find('article', class_="data").find_all('span')
             title = item.find('span', class_='title').text
             articleinfo.pop()
             articleinfo.pop()
-            authors = ""
+        authors = ""
         for author in articleinfo:
             authors = authors + author.text + ";"
-        print(authors, title, paperurl)
+        return title,authors,paperurl

@@ -1,0 +1,6 @@
+EINSTEIN: an internal driver in a time-sharing environment.Marc H. Fogel;Marc H. Fogel;Joseph Winograd;Joseph Winograd;
+https://doi.org/10.1145/775257.775258
+Market-based recommendation: Agents that compete for consumer attention.Sander M. Bohte;Sander M. Bohte;Enrico Gerding;Enrico Gerding;Johannes A. La Poutré;Johannes A. La Poutré;
+https://doi.org/10.1145/1031114.1031118
+Building a sense of history: narratives and pathways of women computing educators.Vicki L. Almstrum;Vicki L. Almstrum;Lecia Jane Barker;Lecia Jane Barker;Barbara Boucher Owens;Barbara Boucher Owens;Elizabeth S. Adams;Elizabeth S. Adams;William Aspray;William Aspray;Nell B. Dale;Nell B. Dale;Wanda Dann;Wanda Dann;Andrea Lawrence;Andrea Lawrence;Leslie Schwartzman;Leslie Schwartzman;
+https://doi.org/10.1145/1113847.1113895
