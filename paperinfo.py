@@ -1,5 +1,5 @@
 '''
-抓取杂志名称及其链接地址
+抓取论文的名称，链接，作者
 https://dblp.uni-trier.de/db/journals?pos=01
 最大4501项
 python版本： 3.7
