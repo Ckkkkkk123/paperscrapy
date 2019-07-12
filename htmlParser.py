@@ -35,6 +35,7 @@ class HtmlParser(object):
     def parsePaper(self, content):
         soup = BeautifulSoup(content, 'html.parser')
         trasplist = soup.find_all('li', class_="entry article")
+        articleinfo = []
         for item in trasplist:
             atag = item.find('div',class_='head').find('a')
             if atag is None:

@@ -1,0 +1,212 @@
+2019-07-13 06:15:59,730 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:15:59,768 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:16:01,042 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/?pos=01] [36.15 KB]>
+2019-07-13 06:16:01,096 - ZHU_SPIDER - INFO - zhu_spider -- Exception -- Stopped -- Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 114, in start
+    self._crawl(batch)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 176, in _crawl
+    for pipeline in self._pipelines.itervalues():
+AttributeError: 'dict' object has no attribute 'itervalues'
+
+2019-07-13 06:18:09,210 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:18:09,225 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:18:10,694 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/?pos=01] [36.15 KB]>
+2019-07-13 06:18:10,752 - ZHU_SPIDER - INFO - zhu_spider -- Exception -- Stopped -- Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 114, in start
+    self._crawl(batch)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 176, in _crawl
+    for pipeline in self._pipelines.itervalues():
+AttributeError: 'dict' object has no attribute 'itervalues'
+
+2019-07-13 06:18:24,023 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:18:24,040 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:18:25,276 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/?pos=01] [36.15 KB]>
+2019-07-13 06:18:25,304 - ZHU_SPIDER - INFO - zhu_spider -- Exception -- Stopped -- Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 114, in start
+    self._crawl(batch)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 176, in _crawl
+    for pipeline in self._pipelines.itervalues():
+AttributeError: 'dict' object has no attribute 'itervalues'
+
+2019-07-13 06:23:06,759 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:23:06,771 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:23:08,138 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/?pos=01] [36.15 KB]>
+2019-07-13 06:42:17,868 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:42:17,882 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:42:19,200 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/?pos=01] [36.15 KB]>
+2019-07-13 06:42:19,232 - ZHU_SPIDER - ERROR - process error: https://dblp.uni-trier.de/db/journals?pos=01
+response: log/error_content/4e2d4ffe-a4f6-11e9-888e-d0817ab669b6_log.txt
+Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/utils/decorator.py", line 42, in wrapper
+    for callback in process:
+  File "spiderMain1.py", line 38, in process
+    soup = BeautifulSoup(response,'html.parser')
+NameError: name 'BeautifulSoup' is not defined
+
+2019-07-13 06:42:46,265 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:42:46,277 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:42:47,365 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/?pos=01] [36.15 KB]>
+2019-07-13 06:42:47,381 - ZHU_SPIDER - ERROR - process error: https://dblp.uni-trier.de/db/journals?pos=01
+response: log/error_content/5ef6d206-a4f6-11e9-9562-d0817ab669b6_log.txt
+Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/utils/decorator.py", line 42, in wrapper
+    for callback in process:
+  File "spiderMain1.py", line 35, in process
+    soup = BeautifulSoup(response,'html.parser')
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/bs4/__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'Response' has no len()
+
+2019-07-13 06:43:48,862 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:43:48,875 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:43:50,229 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/?pos=01] [36.15 KB]>
+2019-07-13 06:43:54,122 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/] [25.89 KB]>
+2019-07-13 06:43:54,122 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/dr/] [23.06 KB]>
+2019-07-13 06:43:54,123 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/] [25.13 KB]>
+2019-07-13 06:43:54,123 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/] [25.29 KB]>
+2019-07-13 06:43:54,123 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/] [27.13 KB]>
+2019-07-13 06:43:54,123 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/cca/] [26.73 KB]>
+2019-07-13 06:43:54,123 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/jcd/] [23.11 KB]>
+2019-07-13 06:43:54,124 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/jea/] [25.21 KB]>
+2019-07-13 06:43:54,124 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/pma/] [22.66 KB]>
+2019-07-13 06:43:54,124 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tap/] [24.81 KB]>
+2019-07-13 06:43:57,396 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tog/] [26.72 KB]>
+2019-07-13 06:43:57,396 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tos/] [24.27 KB]>
+2019-07-13 06:43:57,397 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tsp/] [26.84 KB]>
+2019-07-13 06:43:57,397 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aada/] [24.07 KB]>
+2019-07-13 06:43:57,398 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aans/] [23.61 KB]>
+2019-07-13 06:43:57,398 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/acta/] [28.16 KB]>
+2019-07-13 06:43:57,398 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/cacm/] [29.11 KB]>
+2019-07-13 06:43:57,398 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/csur/] [27.56 KB]>
+2019-07-13 06:43:57,399 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijia/] [24.07 KB]>
+2019-07-13 06:43:57,399 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/jacm/] [29.24 KB]>
+2019-07-13 06:44:02,005 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/jcrd/] [22.77 KB]>
+2019-07-13 06:44:02,006 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/jetc/] [24.65 KB]>
+2019-07-13 06:44:02,006 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/jsan/] [23.28 KB]>
+2019-07-13 06:44:02,006 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/taas/] [24.51 KB]>
+2019-07-13 06:44:02,007 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/taco/] [24.82 KB]>
+2019-07-13 06:44:02,007 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/talg/] [24.59 KB]>
+2019-07-13 06:44:02,007 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tcps/] [23.12 KB]>
+2019-07-13 06:44:02,007 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/teco/] [23.26 KB]>
+2019-07-13 06:44:02,007 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tecs/] [24.70 KB]>
+2019-07-13 06:44:02,008 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tiis/] [23.77 KB]>
+2019-07-13 06:44:06,203 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tist/] [24.16 KB]>
+2019-07-13 06:44:06,203 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tkdd/] [24.23 KB]>
+2019-07-13 06:44:06,203 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tmis/] [24.11 KB]>
+2019-07-13 06:44:06,204 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tocl/] [25.26 KB]>
+2019-07-13 06:44:06,204 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tocs/] [27.11 KB]>
+2019-07-13 06:44:06,204 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/toct/] [24.18 KB]>
+2019-07-13 06:44:06,204 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tods/] [28.02 KB]>
+2019-07-13 06:44:06,204 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tois/] [27.37 KB]>
+2019-07-13 06:44:06,205 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/toit/] [24.70 KB]>
+2019-07-13 06:44:06,205 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/toms/] [27.65 KB]>
+2019-07-13 06:44:13,849 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/topc/] [23.27 KB]>
+2019-07-13 06:44:13,849 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tosn/] [24.97 KB]>
+2019-07-13 06:44:13,849 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tsas/] [23.39 KB]>
+2019-07-13 06:44:13,850 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tslp/] [24.21 KB]>
+2019-07-13 06:44:13,850 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tweb/] [24.35 KB]>
+2019-07-13 06:44:13,850 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/actaC/] [24.92 KB]>
+2019-07-13 06:44:13,850 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adhoc/] [29.54 KB]>
+2019-07-13 06:44:13,850 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/advai/] [23.45 KB]>
+2019-07-13 06:44:13,850 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ahswn/] [26.27 KB]>
+2019-07-13 06:44:13,850 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/amses/] [23.57 KB]>
+2019-07-13 06:44:18,392 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/i-jac/] [24.43 KB]>
+2019-07-13 06:44:18,392 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijaip/] [24.30 KB]>
+2019-07-13 06:44:18,392 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijais/] [26.36 KB]>
+2019-07-13 06:44:18,392 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijamc/] [23.78 KB]>
+2019-07-13 06:44:18,393 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijaom/] [24.12 KB]>
+2019-07-13 06:44:18,393 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/isafm/] [25.24 KB]>
+2019-07-13 06:44:18,393 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/jeric/] [25.44 KB]>
+2019-07-13 06:44:18,393 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/jocch/] [24.03 KB]>
+2019-07-13 06:44:18,394 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/queue/] [24.12 KB]>
+2019-07-13 06:44:18,394 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/talip/] [25.39 KB]>
+2019-07-13 06:44:22,074 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tochi/] [25.96 KB]>
+2019-07-13 06:44:22,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tosem/] [26.63 KB]>
+2019-07-13 06:44:22,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/trets/] [24.43 KB]>
+2019-07-13 06:44:22,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tsoco/] [22.61 KB]>
+2019-07-13 06:44:22,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/access/] [23.25 KB]>
+2019-07-13 06:44:22,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/actaip/] [23.14 KB]>
+2019-07-13 06:44:22,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ij3dim/] [23.48 KB]>
+2019-07-13 06:44:22,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijaacs/] [24.45 KB]>
+2019-07-13 06:44:22,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijahuc/] [25.61 KB]>
+2019-07-13 06:44:22,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijapuc/] [24.32 KB]>
+2019-07-13 06:44:26,786 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijaras/] [23.68 KB]>
+2019-07-13 06:44:26,786 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijavet/] [24.30 KB]>
+2019-07-13 06:44:26,786 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/loplas/] [23.33 KB]>
+2019-07-13 06:44:26,786 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/pacmpl/] [22.93 KB]>
+2019-07-13 06:44:26,787 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/sigapl/] [23.70 KB]>
+2019-07-13 06:44:26,787 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/sigcse/] [25.29 KB]>
+2019-07-13 06:44:26,787 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/siglog/] [23.22 KB]>
+2019-07-13 06:44:26,787 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/sigops/] [27.89 KB]>
+2019-07-13 06:44:26,788 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/todaes/] [25.77 KB]>
+2019-07-13 06:44:26,788 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tomacs/] [26.04 KB]>
+2019-07-13 06:44:31,085 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/toplas/] [27.80 KB]>
+2019-07-13 06:44:31,089 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijantti/] [24.24 KB]>
+2019-07-13 06:44:31,089 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/inroads/] [23.53 KB]>
+2019-07-13 06:44:31,090 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/pacmhci/] [23.25 KB]>
+2019-07-13 06:44:31,090 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/sigplan/] [26.83 KB]>
+2019-07-13 06:44:31,090 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/sigsoft/] [25.60 KB]>
+2019-07-13 06:44:31,090 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/taccess/] [24.46 KB]>
+2019-07-13 06:44:31,091 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tomccap/] [25.36 KB]>
+2019-07-13 06:44:31,091 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/tompecs/] [23.66 KB]>
+2019-07-13 06:44:31,091 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/pacmcgit/] [23.02 KB]>
+2019-07-13 06:47:02,769 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:47:02,782 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:47:12,648 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/crossroads/] [24.83 KB]>
+2019-07-13 06:47:12,649 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/dr/dr1.html] [458.63 KB]>
+2019-07-13 06:47:12,649 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/dr/dr2.html] [525.38 KB]>
+2019-07-13 06:47:12,649 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/dr/dr3.html] [41.56 KB]>
+2019-07-13 06:47:12,649 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/sigspatial/] [24.15 KB]>
+2019-07-13 06:47:12,650 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar10.html] [321.19 KB]>
+2019-07-13 06:47:12,650 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar11.html] [409.88 KB]>
+2019-07-13 06:47:12,650 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar12.html] [426.42 KB]>
+2019-07-13 06:47:12,650 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar13.html] [796.36 KB]>
+2019-07-13 06:52:31,734 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:52:31,749 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:52:47,277 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar24.html] [914.55 KB]>
+2019-07-13 06:52:47,278 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar25.html] [959.43 KB]>
+2019-07-13 06:52:47,278 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar26.html] [882.13 KB]>
+2019-07-13 06:52:47,278 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar27.html] [996.04 KB]>
+2019-07-13 06:52:47,278 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar28.html] [1149.40 KB]>
+2019-07-13 06:52:47,278 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar29.html] [1039.93 KB]>
+2019-07-13 06:52:47,279 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar30.html] [1001.92 KB]>
+2019-07-13 06:52:47,279 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar31.html] [885.90 KB]>
+2019-07-13 06:52:47,279 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar32.html] [856.61 KB]>
+2019-07-13 06:52:48,157 - ZHU_SPIDER - INFO - zhu_spider -- Exception -- Stopped -- Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 114, in start
+    self._crawl(batch)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 176, in _crawl
+    for pipeline in self._pipelines.itervalues():
+AttributeError: 'dict' object has no attribute 'itervalues'
+
+2019-07-13 06:53:07,194 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-13 06:53:07,207 - ZHU_SPIDER - INFO - start request:<Request [GET] [https://dblp.uni-trier.de/db/journals?pos=01]>
+2019-07-13 06:53:21,618 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ar/ar33.html] [414.81 KB]>
+2019-07-13 06:53:21,618 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijact-aicit/] [22.43 KB]>
+2019-07-13 06:53:21,618 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or1.html] [186.31 KB]>
+2019-07-13 06:53:21,619 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or2.html] [206.75 KB]>
+2019-07-13 06:53:21,619 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or3.html] [202.22 KB]>
+2019-07-13 06:53:21,619 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or4.html] [193.06 KB]>
+2019-07-13 06:53:21,619 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or5.html] [208.46 KB]>
+2019-07-13 06:53:21,619 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or6.html] [216.55 KB]>
+2019-07-13 06:53:21,619 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or7.html] [258.66 KB]>
+2019-07-13 06:53:29,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/ijact-aicit/ijact-aicit2.html] [631.46 KB]>
+2019-07-13 06:53:29,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or8.html] [248.67 KB]>
+2019-07-13 06:53:29,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/4or/4or9.html] [277.69 KB]>
+2019-07-13 06:53:29,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb1.html] [147.54 KB]>
+2019-07-13 06:53:29,075 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb2.html] [122.76 KB]>
+2019-07-13 06:53:29,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb3.html] [156.00 KB]>
+2019-07-13 06:53:29,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb4.html] [174.74 KB]>
+2019-07-13 06:53:29,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb5.html] [157.22 KB]>
+2019-07-13 06:53:29,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb6.html] [142.13 KB]>
+2019-07-13 06:53:29,076 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb7.html] [180.27 KB]>
+2019-07-13 06:53:35,764 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb8.html] [138.11 KB]>
+2019-07-13 06:53:35,764 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/adb/adb9.html] [145.07 KB]>
+2019-07-13 06:53:35,764 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/aie1.html] [136.43 KB]>
+2019-07-13 06:53:35,765 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/aie2.html] [163.51 KB]>
+2019-07-13 06:53:35,765 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/aie3.html] [212.32 KB]>
+2019-07-13 06:53:35,765 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/aie4.html] [134.25 KB]>
+2019-07-13 06:53:35,765 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/aie5.html] [163.35 KB]>
+2019-07-13 06:53:35,765 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/aie6.html] [158.19 KB]>
+2019-07-13 06:53:35,766 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/aie7.html] [139.15 KB]>
+2019-07-13 06:53:35,766 - ZHU_SPIDER - INFO - <Response [200] [https://dblp.uni-trier.de/db/journals/aei/aie8.html] [223.74 KB]>

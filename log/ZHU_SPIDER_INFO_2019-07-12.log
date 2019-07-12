@@ -1,0 +1,81 @@
+2019-07-12 23:29:57,780 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-12 23:29:57,808 - ZHU_SPIDER - INFO - zhu_spider -- Exception -- Stopped -- Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/gevent/_socket3.py", line 336, in connect
+    raise error(err, strerror(err))
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 110, in start
+    self._queue.push(start_request)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/scheduler/queue.py", line 77, in push
+    self._server.execute_command('ZADD', self.task_id, score, data)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+
+2019-07-12 23:33:43,895 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-12 23:33:43,911 - ZHU_SPIDER - INFO - zhu_spider -- Exception -- Stopped -- Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/gevent/_socket3.py", line 336, in connect
+    raise error(err, strerror(err))
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 110, in start
+    self._queue.push(start_request)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/scheduler/queue.py", line 77, in push
+    self._server.execute_command('ZADD', self.task_id, score, data)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+
+2019-07-12 23:33:55,090 - ZHU_SPIDER - INFO - START zhu_spider SUCCESS
+2019-07-12 23:33:55,106 - ZHU_SPIDER - INFO - zhu_spider -- Exception -- Stopped -- Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 492, in connect
+    sock = self._connect()
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 550, in _connect
+    raise err
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 538, in _connect
+    sock.connect(socket_address)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/gevent/_socket3.py", line 336, in connect
+    raise error(err, strerror(err))
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/spider/spider_core.py", line 110, in start
+    self._queue.push(start_request)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/fetchman/scheduler/queue.py", line 77, in push
+    self._server.execute_command('ZADD', self.task_id, score, data)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/Users/huyiyong/anaconda3/lib/python3.6/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+

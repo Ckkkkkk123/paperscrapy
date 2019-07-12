@@ -11,11 +11,7 @@ class SpiderMain(object):
         self.parser = htmlParser.HtmlParser()
     # 保存数据到txt
     def save(self,title,authors,url):
-        filename = "论文.txt"
-        f =open(filename, "a+",encoding='utf-8')
-        f.write(title+authors+'\n')
-        f.write(url+'\n')
-        f.close()
+        print('save')
     # craw方法,爬虫调度程序
     def craw(self,root_url):
         # 添加入口url到urlmanager中
@@ -48,5 +44,5 @@ class SpiderMain(object):
 if __name__ == "__main__":
     root_url = "https://dblp.uni-trier.de/db/journals?pos=01"
     obj_spider = SpiderMain()
-    obj_spider.craw(root_url)
+    # obj_spider.craw(root_url)
     
