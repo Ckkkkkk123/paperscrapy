@@ -3,13 +3,14 @@ import htmlDownloader
 import htmlParser
 import urlManager
 
+
 class SpiderMain(object):
     # 爬虫总调度程序会使用 url 管理器、 html 的下载器、解析器、输出器，下面初始化一下：
     def __init__(self):
         self.download = htmlDownloader.HtmlDownloader()
         self.urls = urlManager.UrlManager()
         self.parser = htmlParser.HtmlParser()
-    
+
     # craw方法,爬虫调度程序
     def craw(self,root_url):
         # 添加入口url到urlmanager中
@@ -41,4 +42,4 @@ class SpiderMain(object):
 if __name__ == "__main__":
     root_url = "https://dblp.uni-trier.de/db/journals?pos=01"
     obj_spider = SpiderMain()
-    obj_spider.craw(root_url) # 启动爬虫
+    obj_spider.craw(root_url)  # 启动爬虫
