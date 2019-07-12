@@ -7,6 +7,7 @@ os: macos
 '''
 import requests
 import os
+import sys
 import queue
 from bs4 import BeautifulSoup
 # 用一个队列保存url
