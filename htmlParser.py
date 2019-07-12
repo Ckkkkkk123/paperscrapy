@@ -6,8 +6,11 @@ class HtmlParser(object):
     def parseEntry(self, content):
         soup = BeautifulSoup(content,'html.parser')
         link = soup.find(name='div',class_='hide-body').find_all('a')
+        urls = set()
         for ref in link:
-            print(ref.text,ref.get('href'))
+            data = (ref.get('href'),1)
+            urls.add(data)
+        return urls
     # 解析器编号1
     def parseStran(self,content):
         soup = BeautifulSoup(content,'html.parser')
@@ -17,8 +20,11 @@ class HtmlParser(object):
             if item.name == 'ul':
                 ullink = item
         infolist = ullink.find_all('a')
+        urls = set()
         for temp in infolist:
-            print(temp.text,temp.get('href'))
+            data = (temp.get('href'),2)
+            urls.add(data)
+        return urls
     # 解析器编号2
     def parsePaper(self,content):
         soup = BeautifulSoup(content,'html.parser')
