@@ -34,6 +34,7 @@ def get_content(url):
 # 解析内容
 def praseContent(content):
     soup = BeautifulSoup(content, 'html.parser')
+    print(soup.find('header').text.split(',')[0])
     trasplist = soup.find_all('li', class_="entry article")
     for item in trasplist:
         paperurl = item.find('div', class_='head').a.get('href')
@@ -44,7 +45,7 @@ def praseContent(content):
         authors = ""
         for author in articleinfo:
             authors = authors + author.text + ";"
-        print(authors, title, paperurl)
+        # print(authors, title, paperurl)
 
 
 url = "https://dblp.uni-trier.de/db/journals/taccess/taccess8.html"

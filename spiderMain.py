@@ -5,6 +5,7 @@ from fetchman.processor.base_processor import BaseProcessor
 from fetchman.downloader.http.spider_request import Request
 from fetchman.utils.decorator import check
 from pipelines.console_pipeline import ConsolePipeline
+from pipelines.database_pipeline import DataBasePipeline
 from fetchman.pipeline.pipe_item import pipeItem
 from bs4 import BeautifulSoup
 import hashlib
@@ -24,12 +25,6 @@ class Zhu_Processor(BaseProcessor):
     @classmethod
     def init_start_requests(cls):
         cls.start_requests.extend([Request(url='https://dblp.uni-trier.de/db/journals?pos=%d' % page,callback=self.process_entry, priority=0,duplicate_remove=False) for page in range(1,4500)])
-    # @check
-    # def process(self,response):
-    #     page = 1
-    #     while page <= 4567:
-    #         yield Request(url='https://dblp.uni-trier.de/db/journals?pos=%d' % page,callback=self.process_entry, priority=0,duplicate_remove=False)
-    #         page +=1
     
     @check
     def process(self,response):
@@ -52,11 +47,14 @@ class Zhu_Processor(BaseProcessor):
         for temp in infolist:
             paperlink = temp.get('href')
             request = Request(url=paperlink, priority=1, callback=self.process_paper)
+            request.meta['paperFrom'] = paperlink
             yield request
     
     @check
     def process_paper(self,response):
         soup = BeautifulSoup(response.m_response.content, 'html.parser')
+        catory = soup.find('header').text.split(',')[0]
+        # paperFrom = response.request.meta['paperFrom']
         trasplist = soup.find_all('li', class_="entry article")
         articleinfo = []
         for item in trasplist:
@@ -74,9 +72,12 @@ class Zhu_Processor(BaseProcessor):
             result = dict()
             result['title'] = title
             result['authors'] = authors
-            result['url'] = paperurl
-            yield pipeItem(['console'],result)
+            result['paperUrl'] = paperurl
+            result['catory'] = catory
+            # result['paperFrom'] = paperFrom
+            yield pipeItem(['console','database'],result)
 if __name__ == '__main__':
     SpiderCore(Zhu_Processor()) \
         .set_pipeline(ConsolePipeline(), 'console') \
+        .set_pipeline(DataBasePipeline(), 'database') \
         .start()
