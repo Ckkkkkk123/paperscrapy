@@ -25,6 +25,6 @@ dbconn = MYSQL(
 class DataBasePipeline(ItemPipeline):
     def process_item(self, item):
         try:
-            dbconn.insert(table='paper_skem', data=item)
+            dbconn.insert(table='paper_skam', data=item)
         except Exception:
             FetchManLogger.logger.error(traceback.format_exc())

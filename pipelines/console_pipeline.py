@@ -9,6 +9,7 @@ import traceback
 class ConsolePipeline(ItemPipeline):
     def process_item(self, item):
         try:
-            print(item)
+            # print(item)
+            pass
         except:
             FetchManLogger.logger.error(traceback.format_exc())

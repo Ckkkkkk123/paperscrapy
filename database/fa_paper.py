@@ -64,7 +64,6 @@ class MYSQL:
         """mysql insert() function"""
 
         with self.connection.cursor() as cursor:
-
             params = self.join_field_value(data)
 
             sql = "INSERT IGNORE INTO {table} SET {params}".format(
